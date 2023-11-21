@@ -189,27 +189,65 @@ footer .container{
     margin-top:0px;
     padding-top: 60px;
     display: flex;
-    /* justify-content: space-between; */
 }
 
 footer .container > div{
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 footer .container>div:first-child{
-    flex-grow: 2;
+    flex-grow: 3;
     
 }
 
 footer ul li{
     list-style-type: none;
+    line-height: 160%;
+}
+
+.container h4{
+    color: #7289da;
+}
+
+.container a{
+    color: white;
 }
 
 div.container div:first-child h4{
     font-size: 30px;
+    color: #7289da;
+}
+
+div.container div:first-child span{
+    display: inline-block;
+    margin-block: 20px;
+
+}
+
+div.container div:first-child span img{
+    width: 20px;    
+}
+
+div.container div:first-child ul{
+    display: flex;
+    gap: 20px;
+}
+
+hr{
+    border: 1px solid #7289da;
+    width: 80%;
+    margin: auto;
 }
 
 footer .footer-login{
     display: flex;
     justify-content: space-between;
 }
+
+.registrati{
+    color: white;
+    background-color: #7289da;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;  
+}
+/* finito esercizio */
