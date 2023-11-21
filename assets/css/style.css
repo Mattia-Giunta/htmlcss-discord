@@ -4,80 +4,126 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Yantramanav', sans-serif;
+}
+
 a{
     text-decoration: none;
 }
 
 header{
     /* padding: 10px 20px; */
-    background-color: lightcyan;
     padding-bottom: 50px;
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header nav{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+    padding-top: 40px;
+    align-items: center;
 }
 
 header nav figure,
 header nav ul,
 header nav a{
-    /* background-color: lightgoldenrodyellow; */
-    border: 1px dashed black;
+    color: white;
+
 }
 
 header nav ul{
     display: flex;
-    gap: 10px;
+    gap: 80px;
 }
 
 header nav ul li{
     /* display: inline-block; */
+    list-style-type: none;  
+}
 
-    list-style-type: none;
+.accedi{
+    color: black;
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    
 }
 
 #cta{
-    background-color: lightpink;
-    width: 60%;
-    margin: 50px auto 0 auto;
-
+    width: 50%;
+    margin: 70px auto 70px auto;
     text-align: center;
 }
 
+#cta h2,p{
+    color: white;
+}
+
+#cta h2{
+    font-size:60px;
+    padding-block: 20px;
+}
+
+#cta p{
+    font-size:20px;
+    padding-block: 20px;
+}
+
+#cta-buttons button{
+    font-size: 25px;
+    font-family: 'Yantramanav', sans-serif;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border:none;
+    margin-inline: 10px;
+}
+
+#cta-buttons button:last-child{
+    background-color: #23272a;
+    color: white;
+    
+}
+
+
+/* sezioni centrali */
 .container{
     width: 80%;
-    margin: 0 auto;
+    margin: 150px auto;
 }
 
 section{
-    border: 1px dashed black;
     padding-block: 20px;
-    /* background-color: black; */
 }
 
-section figure{
-    background-color: lightgoldenrodyellow;
+section .section-text h3{
+    font-size: 50px;
+    padding-top: 20px;
 }
 
-section .section-text{
-    background-color: lightgreen;
+section .section-text p{
+    font-size: 20px;
+    padding-top: 20px;
+    color: black;
 }
 
 section .img-text{
     display: flex;
+    justify-content: space-evenly;
 }
 
 section .img-text figure{
-    flex-basis: 70%;
+    flex-basis: 60%;
 }
 
 section .img-text .section-text{
-    flex-basis: 30%;
+    flex-basis: 25%;
 }
 
 section.discord-services:nth-child(even){
@@ -88,21 +134,60 @@ section.discord-services:nth-child(even) .img-text figure{
     order: 1;
 }
 
+
+/* ultima sezione */
 section.discord-services:last-child{
     text-align: center;
 }
 
+section.discord-services:last-child h3{
+    font-size: 50px;
+}
 
+section.discord-services:last-child p{
+    font-size: 20px;
+    color: black;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+section.discord-services:last-child img{
+    width: 90%;
+}
+
+section.discord-services:last-child h5{
+    font-size: 30px;
+    width: 40%;
+    margin: auto;
+    height: 80px;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 30px;
+}
+
+section.discord-services:last-child button{
+    font-size: 20px;
+    background-color: #8ea1e1;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    margin-top: 20px;
+}
+
+
+
+/* footer */
 footer{
-    background-color: #121212;
+    background-color: #23272a;
     color: white;
 }
 
-footer ul li{
-    list-style-type: none;
-}
-
 footer .container{
+    margin-top:0px;
+    padding-top: 60px;
     display: flex;
     /* justify-content: space-between; */
 }
@@ -113,6 +198,15 @@ footer .container > div{
 
 footer .container>div:first-child{
     flex-grow: 2;
+    
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+div.container div:first-child h4{
+    font-size: 30px;
 }
 
 footer .footer-login{
